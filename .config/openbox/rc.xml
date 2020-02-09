@@ -69,7 +69,7 @@
       <name>3</name>
       <name>4</name>
     </names>
-    <popupTime>800</popupTime>
+    <popupTime>0</popupTime>
   </desktops>
   <resize>
     <drawContents>yes</drawContents>
@@ -363,18 +363,6 @@
         <bottom>-20</bottom>
       </action>
     </keybind>
-    <keybind key="S-W-Left">
-      <action name="SendToDesktopLeft"/>
-    </keybind>
-    <keybind key="S-W-Right">
-      <action name="SendToDesktopRight"/>
-    </keybind>
-    <keybind key="S-W-Up">
-      <action name="SendToDesktopUp"/>
-    </keybind>
-    <keybind key="S-W-Down">
-      <action name="SendToDesktopDown"/>
-    </keybind>
     <keybind key="A-Escape">
       <action name="Lower"/>
       <action name="FocusToBottom"/>
@@ -475,13 +463,11 @@
         <command>rofi -show drun</command>
       </action>
     </keybind>
-
     <keybind key="W-S-Return">
       <action name="Execute">
         <command>rofimoji</command>
       </action>
     </keybind>
-
     <keybind key="W-s">
       <action name="Execute">
         <command>skippy-xd</command>
@@ -952,11 +938,10 @@
       <fullscreen>yes</fullscreen>
     </application>
   </applications>
-
   <applications>
     <application class="*">
-     <decor>no</decor>
-     <position force="no"></position>
+      <decor>no</decor>
+      <position force="no"/>
     </application>
   </applications>
- </openbox_config>
+</openbox_config>
