@@ -1,0 +1,6 @@
+TerminalEmulator=custom-TerminalEmulator
+WebBrowser=firefox
+MailReader=thunderbird
+FileManager=custom-FileManager
+FileManagerDismissed=true
+
