@@ -23,6 +23,5 @@ monitor-fallback =
 ;tray-transparent = true
 ;tray-background = #000000
 
-modules-left   = manjaro workspaces
-modules-center =  clock
-modules-right  = alsa battery pkg network memory
+modules-left   = workspaces
+modules-right  = clock alsa battery network
