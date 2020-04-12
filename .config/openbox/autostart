@@ -1,11 +1,3 @@
-### use arandr to set screen preference
-### save as ~/.screenlayout/dual-head.sh
-### and uncomment next line
-### ------------------------------------
-### alt. use the xfce monitor setup from system settings control panel
-#~/.screenlayout/dual-head.sh
-
-### Required for xfce settings to work
 sleep 0.5; xfsettingsd &
 
 ### compositor
@@ -15,6 +7,8 @@ sleep 1; manjaro-compositor --start &
 ### comment if you would rather use pcmanfm
 thunar --daemon &
 
+pulseaudio &
+
 ### use desktop icons and pcmanfm as wallpaper manager
 ### uncomment next line and comment nitrogen below
 #pcmanfm --desktop &
@@ -23,21 +17,13 @@ thunar --daemon &
 ### uncomment next line and comment pcmanfm above
 sleep 1; nitrogen --restore &
 
-sleep 1; manjaro-polybar-session &
-sleep 1; manjaro-tint2-session &
-sleep 1; manjaro-polybar-session &
-
-### launch conky
-manjaro-conky-session &
+sleep 1; default-tint2-session &
 
 ### volumeicon
 sleep 1; volumeicon &
 
 ## skippy windowswitcher
 skippy-xd --config ~/.config/skippy-xd/skippy-xd.rc --start-daemon &
-
-## super key for menu
-xcape -e 'Super_L=Alt_L|F1' &
 
 ### PolicyKit authentication
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
