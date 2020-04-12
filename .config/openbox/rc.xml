@@ -645,10 +645,6 @@
     </keybind>
     <keybind key="W-Down">
       <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <width>80%</width>
-        <height>80%</height>
-      </action>
       <action name="MoveToCenter"/>
     </keybind>
     <keybind key="W-A-Left">
